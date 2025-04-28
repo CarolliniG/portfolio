@@ -1,89 +1,139 @@
-
 /* Estilos gerais (fora das media queries) */
 body {
-    font-family: "Inter", serif;
-    line-height: 1.6;
-    color: #444444;
+  font-family: "Inter", serif;
+  line-height: 1.6;
+  color: #444444;
 }
 
 h1 {
-    font-size: 2.5rem; /* Tamanho base para h1 */
+  font-size: 2.5rem; /* Tamanho base para h1 */
 }
 
 /* Estilos para o tema escuro */
 body.dark-theme {
-    background-color: #333;
-    color: #eee;
+  background-color: #333;
+  color: #eee;
 }
 
 body.dark-theme .card {
-    background-color: #444; /* Cor de fundo dos cards no tema escuro */
-    color: #eee;
+  background-color: #444; /* Cor de fundo dos cards no tema escuro */
+  color: #eee;
 }
 
 /* Media query para telas muito pequenas (menos de 576px) */
 @media (max-width: 575.98px) {
-    h1 {
-        font-size: 2rem; /* Reduz o tamanho do h1 */
-        text-align: center; /* Centraliza o h1 */
-    }
+  h1 {
+    font-size: 2rem; /* Reduz o tamanho do h1 */
+    text-align: center; /* Centraliza o h1 */
+  }
 
-    .d-flex {
-        flex-direction: column; /* Links em coluna */
-        align-items: center; /* Centraliza os links */
-    }
+  .d-flex {
+    flex-direction: column; /* Links em coluna */
+    align-items: center; /* Centraliza os links */
+  }
 
-    .d-flex a {
-        margin: 5px 0; /* Espaçamento entre os links */
-        display: block; /* Links ocupam a largura total */
-        text-align: center;
-    }
+  .d-flex a {
+    margin: 5px 0; /* Espaçamento entre os links */
+    display: block; /* Links ocupam a largura total */
+    text-align: center;
+  }
 }
 
 /* Media query para telas pequenas (menos de 768px) */
 @media (max-width: 767.98px) {
-    /* Ajustes específicos para telas pequenas, se necessário */
-    h1 {
-        font-size: 2.2rem;
-    }
+  /* Ajustes específicos para telas pequenas, se necessário */
+  h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* Media query para telas médias (menos de 992px) */
 @media (max-width: 991.98px) {
-    /* Ajustes específicos para tablets, se necessário */
+  /* Ajustes específicos para tablets, se necessário */
 }
 
 /* Media query para telas grandes (menos de 1200px) */
 @media (max-width: 1199.98px) {
-    /* Ajustes específicos para desktops menores, se necessário */
+  /* Ajustes específicos para desktops menores, se necessário */
 }
 
 /* Media query para telas muito grandes (menos de 1400px) */
 @media (max-width: 1399.98px) {
-    /* Ajustes específicos para desktops grandes, se necessário */
+  /* Ajustes específicos para desktops grandes, se necessário */
 }
 
-.navbar{
-    background-color: #1F4E78 ;
+.navbar {
+  background-color: #1f4e78;
 }
-.navbar span{
-    color: #F7C873;
-    font-size: 30px;
+.navbar h1 {
+  color: #f7c873;
+  font-size: 30px;
 }
-.form-check .form-check-input{
-    background-color: #F7C873; 
-    border: #F7C873
+.navbar-brand:hover {
+  color: #f7c873 !important; /* Mantém a cor amarela no hover */
+  text-decoration: none !important; /* Remove qualquer sublinhado que possa aparecer */
+  cursor: default !important; /* Define o cursor como padrão (seta) */
 }
+.form-check .form-check-input {
+  background-color: #f7c873;
+  border: #f7c873;
+}
+
+.hamburger-group {
+  fill: #f7c873;
+  fill-rule: nonzero;
+  stroke: none;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 10;
+  stroke-dasharray: "";
+  stroke-dashoffset: 0;
+  font-family: none;
+  font-weight: none;
+  font-size: none;
+  text-anchor: none;
+  mix-blend-mode: normal;
+}
+
 .about h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-.about p{
-    color: #797979;
-    margin-bottom: 30px;
+.about p {
+  color: #797979;
+  margin-bottom: 30px;
 }
 
-.contato a{
-    padding-right: 40px;
-    color: #1F4E78;
-    font-weight: bold;
+.contato a {
+  padding-right: 35px;
+  color: #1f4e78;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contato a:not(:last-child)::after {
+  content: "•";
+  color: #f7c873;
+  margin-left: 1.5em;
+  font-size: 25px;
+}
+
+.skilds-card {
+  background-color: #1f4e78;
+  border-color: none;
+  border-radius: 25% 0 0 0;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+}
+
+.card-body p {
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+#skills i {
+  color: #f7c873;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
 }
