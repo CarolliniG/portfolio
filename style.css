@@ -61,6 +61,12 @@ body.dark-theme .card {
 @media (max-width: 1399.98px) {
   /* Ajustes específicos para desktops grandes, se necessário */
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 .navbar {
   background-color: #1f4e78;
@@ -95,7 +101,13 @@ body.dark-theme .card {
   text-anchor: none;
   mix-blend-mode: normal;
 }
-
+#about {
+  padding-top: 8rem;
+}
+.title h2 {
+  text-align: center;
+  margin: 5rem 0;
+}
 .about h1 {
   margin-bottom: 30px;
 }
@@ -125,15 +137,21 @@ body.dark-theme .card {
   text-align: center;
   width: 60%;
   height: 100%;
+  z-index: -1;
+  position: relative;
+}
+.skilds-card p {
+  color: #ffffff;
 }
 
-.card-body p {
-  color: #ffffff;
-  margin: 0 0 10px 0;
-}
 #skills i {
   color: #f7c873;
   font-size: 40px;
   margin: 0;
   padding: 0;
+}
+
+.card {
+  width: 100%;
+  height: 10rem;
 }
