@@ -76,9 +76,9 @@ header {
   font-size: 30px;
 }
 .navbar-brand:hover {
-  color: #f7c873 !important; /* Mantém a cor amarela no hover */
-  text-decoration: none !important; /* Remove qualquer sublinhado que possa aparecer */
-  cursor: default !important; /* Define o cursor como padrão (seta) */
+  color: #f7c873 !important;
+  text-decoration: none !important;
+  cursor: default !important;
 }
 .form-check .form-check-input {
   background-color: #f7c873;
@@ -151,12 +151,6 @@ header {
   padding: 0;
 }
 
-.card {
-  margin-left: 3rem;
-  width: 70%;
-  height: 8rem;
-  position: relative;
-}
 .link-container {
   position: relative;
   display: block;
@@ -173,6 +167,15 @@ header {
   text-align: center;
   z-index: 10;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 15px;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card img {
@@ -183,4 +186,25 @@ header {
 
 .projects a p {
   color: #ffffff;
+}
+
+.projects .card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.projects .card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
